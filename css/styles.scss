@@ -1,18 +1,18 @@
-$lt-gray : #ddd;
-$background-dark: #512dab;
-$background-dark: #512DAB;
+$lt-gray: #ddd;
+$background-dark: #512DA8;
+$background-light: #9575CD;
 $background-pale: #D1C4E9;
 
-//height variables
+// Height variables
 $carousel-item-height: 300px;
 
-//mixin
-@mixin zero-margin ($pad-up-down: 0px, $pad-left-right: 0px){
-    margin: 0px auto;
-    padding: $pad-up-down $pad-left-right;
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0px auto;
+	padding: $pad-up-dn $pad-left-right;
 }
 
-.row header{
+
+.row-header{
     @include zero-margin(0px,0px);
 }
 
@@ -52,6 +52,8 @@ body{
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
+
+
 .carousel {
     background:$background-dark;
 
@@ -65,7 +67,6 @@ body{
         }
     }
 }
-
 #carousel-button {
     right:0px;
     position: absolute;

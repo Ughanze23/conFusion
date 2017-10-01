@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="bootstrap-social.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -40,6 +40,8 @@
     <div>
     </div>
 </nav>
+
+
 <!-- modal-->
 <div id="reserveform" class="modal fade" role="dialog">
         <div class="modal-dialog" role="content">
@@ -461,25 +463,8 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-          $(document).ready(function(){
-              $("#mycarousel").carousel({interval: 2000});
-              $("#carousel-button").click(function(){
-                  if($("#carousel-button").children("span").hasClass("fa-pause")){
-                    $("#mycarousel").carousel('pause'); 
-                    $("#carousel-button").children("span").removeClass("fa-pause")
-                    $("#carousel-button").children("span").addClass("fa-play")
-                  }
-                  else if($("#carousel-button").children("span").hasClass("fa-play")){
-                    $("#mycarousel").carousel('play'); 
-                    $("#carousel-button").children("span").removeClass("fa-play")
-                    $("#carousel-button").children("span").addClass("fa-pause")
-                  }
-              });
-            });
-        </script>
-
+    <script src="js/scripts.js"></script>
+    
 </body>
 
 </html>
