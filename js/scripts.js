@@ -13,5 +13,12 @@
                     $("#carousel-button").children("span").addClass("fa-pause")
                   }
               });
+               $("#login").click(function(){
+                 $("#loginModal").modal('show');
+               });
+
+               $("#reservetableform").click(function(){
+                 $("#reserveform").modal('show');
+               });
             });
     
